@@ -1,7 +1,9 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/GRIDVIEW/gridview2.dart';
+import 'package:flutter_application_1/phonepe/history.dart';
 import 'package:flutter_application_1/phonepe/store.dart';
+import 'package:flutter_application_1/phonepe/wealth.dart';
 import 'package:flutter_application_1/signiinlogin.dart';
 import 'package:flutter_application_1/signup2.dart';
 
@@ -18,8 +20,8 @@ class _HomeScreenState extends State<HomeScreen> {
     HomeScreenContent(),
     store(),
     gridview2(),
-    signinlogin(),
-    signuppage()
+    phonepewealth(),
+    phonepehistory()
   ];
 
   @override
@@ -53,7 +55,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ],
       ),
-      body: _screens[_currentIndex],  // Show screen based on selected index
+      body: _screens[_currentIndex], 
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.shifting,
         backgroundColor: Color(0xFF4E099C),

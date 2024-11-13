@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 
 import 'package:flutter_application_1/GRIDVIEW/gridview4.dart';
 import 'package:flutter_application_1/LISTVIEW/Listview%20with%20list%20generate.dart';
+import 'package:flutter_application_1/phonepe/history.dart';
+import 'package:flutter_application_1/phonepe/insurance.dart';
+import 'package:flutter_application_1/phonepe/store.dart';
+import 'package:flutter_application_1/phonepe/wealth.dart';
 
 import 'package:flutter_application_1/tabbar.dart';
 
@@ -16,10 +20,10 @@ class _phonepenavState extends State<phonepenav> {
   int index = 0;
   final List<Widget> screens = [
     phonepenav(),
-    listview1(),
-    gridview4(),
-    ListTile(),
-    tabbarEx()
+    store(),
+    Insurance(),
+     phonepewealth(),
+    phonepehistory()
   ];
   @override
   Widget build(BuildContext context) {
